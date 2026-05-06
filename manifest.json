@@ -2,7 +2,7 @@
   "name": "Mənfəət Kalkulyatoru",
   "short_name": "Kalkulyator",
   "start_url": ".",
-  "scope": "/",
+  "scope": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2b5cc7",
