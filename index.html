@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mənfəət Kalkulyatoru</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="container">
+
+  <img src="./assets/Libaseria.png" alt="Logo">
+  <h2>MƏNFƏƏT KALKULYATORU</h2>
+
+  <div class="summary">
+    <div>Ümumi xərc: <span id="totalCost">0</span> AZN</div>
+    <div>Xalis mənfəət: <span id="profit">0</span> AZN</div>
+    <div>Marja: <span id="margin">0</span>%</div>
+  </div>
+  
+
+  <div class="status" id="statusText">—</div>
+
+  <div class="bar">
+    <div id="costBar"></div>
+    <div id="deliveryBar"></div>
+    <div id="adsBar"></div>
+    <div id="profitBar"></div>
+  </div>
+
+  <div class="inputs">
+
+    <label>Maya dəyəri (AZN)</label>
+    <div class="inputtypenumber">
+    <input type="range" id="cost" min="0" max="100" value="15">
+    <input type="number" id="costInput" value="15">
+    </div>
+
+    <label>Çatdırılma (AZN)</label>
+    <div class="inputtypenumber">
+    <input type="range" id="delivery" min="0" max="50" value="10">
+    <input type="number" id="deliveryInput" value="10">
+    </div>
+
+    <label>Reklam xərci (AZN)</label>
+    <div class="inputtypenumber">
+    <input type="range" id="ads" min="0" max="50" value="5">
+    <input type="number" id="adsInput" value="5">
+    </div>
+
+    <label>Satış qiyməti (AZN)</label>
+    <div class="inputtypenumber">
+    <input type="range" id="price" min="0" max="200" value="38">
+    <input type="number" id="priceInput" value="38">
+    </div>
+
+    <p id="statusText"></p>
+
+  </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
