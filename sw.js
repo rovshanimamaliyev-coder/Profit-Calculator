@@ -1,12 +1,12 @@
 const CACHE_NAME = "profit-calculator-v2";
 
 const urlsToCache = [
-  "./",
-  "./index.html",
-  "./styles.css",
-  "./app.js",
-  "./Assets/Libaseria.png",
-  "./manifest.json"
+  "/",
+  "index.html",
+  "styles.css",
+  "app.js",
+  "Assets/Libaseria.png",
+  "manifest.json"
 ];
 
 self.addEventListener("install", event => {
